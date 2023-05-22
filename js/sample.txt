@@ -1,0 +1,28 @@
+      {
+      "member": "Rebecca Randell",
+      "name": "RR", 
+      "link": "https://www.bradford.ac.uk/staff/rrandell",
+      "img":  "img/randell.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Peter Gardener",
+      "name": "PG", 
+      "link": "https://www.bradford.ac.uk/staff/phgardner",
+      "img":  "img/gardener.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Catherine Quinn",
+      "name": "CQ", 
+      "link": "https://www.bradford.ac.uk/staff/cquinn1",
+      "img":  "img/quinn.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Neema Mojarrad",
+      "name": "NM", 
+      "link": "https://www.bradford.ac.uk/staff/nghorbanimojarrad",
+      "img":  "img/mojarrad.jfif",
+      "size": 50000
+      }  

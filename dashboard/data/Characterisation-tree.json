@@ -1,0 +1,28 @@
+{
+    "name": "img/dmp.jpg",
+    "children": [{
+            "name": "img/cognitive.png"
+             },
+            {
+                "name": "img/biosamples.png"
+            },
+            {
+                "name": "img/demographics.png"
+            },
+            {
+                "name": "img/education.png"
+            },
+            {
+                "name": "img/epigenetic.png"
+            },
+            {
+                "name": "img/geographic.png"
+            },
+            {
+                "name": "img/healthcare.png"
+            },
+            {
+                "name": "img/question.jpg"
+            }
+    ]
+}

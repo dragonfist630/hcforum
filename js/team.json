@@ -1,0 +1,191 @@
+{
+ "name": "UoB",
+ "children": [
+  {
+    "name": "Wolfson CAHR",
+    "img" : "dashboard/img/dmp.jpg",
+    "children": [
+      {
+      "member": "Rebecca Randell",
+      "name": "RR", 
+      "link": "https://www.bradford.ac.uk/staff/rrandell",
+      "img":  "img/randell.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Melanie Cooper",
+      "name": "M C", 
+      "link": "https://www.bradford.ac.uk/staff/rrandell",
+      "img":  "img/randell.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Peter Gardener",
+      "name": "PG", 
+      "link": "https://www.bradford.ac.uk/staff/phgardner",
+      "img":  "img/gardener.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Catherine Quinn",
+      "name": "CQ", 
+      "link": "https://www.bradford.ac.uk/staff/cquinn1",
+      "img":  "img/quinn.jfif",
+      "size": 50000
+      },
+      {
+      "member": "Neema Mojarrad",
+      "name": "NM", 
+      "link": "https://www.bradford.ac.uk/staff/nghorbanimojarrad",
+      "img":  "img/mojarrad.jfif",
+      "size": 50000
+      }  
+
+    ]
+  },
+  {
+   "name": "Born in Bradford",
+   "img": "dashboard/img/bib.jpg",
+   "children": [
+    {
+      "member": "The Phoenix Partnership",
+      "name": "TPP", 
+      "link": "http://marvel.com/characters/54/spider-man",
+      "img":  "dashboard/img/tpp.jpeg",
+      "size": 50000
+    },
+    {
+      "member": "5Rights Foundation",
+      "name": "5Rights Foundation", 
+      "link": "http://marvel.com/characters/9/captain_marvel",
+      "img":  "dashboard/img/five.jpg",
+      "size": 40000
+    },
+    {
+      "member": "Raspberry Pi Foundation", 
+      "name": "Raspberry Pi Foundation",
+      "link": "http://marvel.com/characters/25/hulk",
+      "img":  "dashboard/img/rpi.png",
+      "size": 40000
+    },
+    {
+      "member": "Black Widow", 
+      "name": "Natalia 'Natasha' Alianovna Romanova",
+      "link": "http://marvel.com/characters/6/black_widow",
+      "img":  "dashboard/img/dfe.png",
+      "size": 70000
+    },
+    {
+      "member": "Daredevil", 
+      "name": "Matthew Michael Murdock",
+      "link": "http://marvel.com/characters/11/daredevil",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_daredevil.png",
+      "size": 40000
+    },
+    {
+      "member": "Wolverine", 
+      "name": "James Howlett",
+      "link": "http://marvel.com/characters/66/wolverine",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_wolverine.png",
+      "size": 40000
+    },
+    {
+      "member": "Captain America", 
+      "name": "Steven Rogers",
+      "link": "http://marvel.com/characters/8/captain_america",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainamerica.png",
+      "size": 40000
+    },
+    {
+      "member": "Iron Man", 
+      "name": "Anthony Edward 'Tony' Stark",
+      "link": "http://marvel.com/characters/29/iron_man",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_ironman.png",
+      "size": 40000
+    },
+    {
+      "member": "THOR", 
+      "name": "Thor Odinson",
+      "link": "http://marvel.com/characters/60/thor",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_thor.png",
+      "size": 40000
+    }
+  ]
+  },
+  {
+   "name": "CAER",
+   "img": "dashboard/img/caer.jpg",
+   "children": [
+    {
+      "member": "Mai Elshehaly",
+      "name": "ME", 
+      "link": "http://www.invisai.com/mai/",
+      "img":  "img/elshehaly.png",
+      "size": 40000
+    },
+    {
+      "member": "Brendan Barrett",
+      "name": "BB", 
+      "link": "https://www.bradford.ac.uk/staff/btbarrett",
+      "img":  "img/barrett.jfif",
+      "size": 40000
+    },
+    {
+      "member": "Chris Davey",
+      "name": "CD", 
+      "link": "https://www.bradford.ac.uk/staff/cjdavey1",
+      "img":  "img/davey.jfif",
+      "size": 40000
+    }
+   ]
+  },
+  {
+   "name": "Bradford Teaching Hospitals Foundation Trust",
+   "img": "dashboard/img/bthft.jpg",
+   "children": [
+    {
+      "member": "Avengers",
+      "name": "", 
+      "link": "http://marvel.com/characters/68/avengers",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/avengers.png",
+      "size": 40000
+    },
+    {
+      "member": "Guardians of the Galaxy",
+      "name": "", 
+      "link": "http://marvel.com/characters/70/guardians_of_the_galaxy",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/gofgalaxy.png",
+      "size": 40000
+    },
+    {
+      "member": "Defenders",
+      "name": "", 
+      "link": "http://marvel.com/characters/534/defenders",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/defenders.png",
+      "size": 40000
+    },
+    {
+      "member": "X-Men",
+      "name": "", 
+      "link": "http://marvel.com/characters/71/x-men",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/xmen.png",
+      "size": 40000
+    },
+    {
+      "member": "Fantastic Four",
+      "name": "", 
+      "link": "http://marvel.com/characters/69/fantastic_four",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/fantasticfour.png",
+      "size": 40000
+    },
+    {
+      "member": "Inhumans",
+      "name": "", 
+      "link": "http://marvel.com/characters/1040/inhumans",
+      "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/inhumans.png",
+      "size": 40000
+    }
+   ]
+  }  
+ ]
+}
