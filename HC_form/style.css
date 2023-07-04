@@ -1,0 +1,24 @@
+* {
+  font-family: "Oswald";
+  color: #000;
+  font-size: 1.2rem;
+}
+body{
+    background-color: #f1f1f1;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+}
+label {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+button {
+  /* font-family: "Open Sans"; */
+  font-size: 1.2rem;
+}
+#deleteOrg, #addOrg{
+    background-color: #000;
+}

@@ -186,6 +186,53 @@
       "size": 40000
     }
    ]
+  },
+  {
+    "name": "Bradford District Wellbeing board",
+    "img": "dashboard/img/BDWb.jpg",
+    "children": [
+      {
+        "member": "Chris Davey",
+        "name" : "CD",
+        "link" : "#",
+        "img" : "img/male_user.png",
+        "size" :40000
+      },
+      {
+        "member" : "Karen Stansfield",
+        "name" : "KS",
+        "link" : "#",
+        "img" :"img/female_user.png",
+        "size" : 40000
+      },
+      {
+        "member" : "Anita Sargeant",
+        "name" : "AS",
+        "link" : "#",
+        "img"  : "img/female_user.png",
+        "size" : 40000
+      }
+    ]
+  },
+  {
+    "name": "Bradford Teaching Hospitals NHS",
+    "img": "dashboard/img/BTH.jpg",
+    "children": [
+      {
+        "member": "Alistair Goldman",
+        "name" : "AG",
+        "link" : "#",
+        "img" : "img/male_user.png",
+        "size" :40000
+      },
+      {
+        "member" : "Udy Archibong",
+        "name" : "UA",
+        "link" : "#",
+        "img" :"img/male_user.png",
+        "size" : 40000
+      }
+    ]
   }  
  ]
 }

@@ -1,0 +1,79 @@
+													
+
+
+Title	First name 	Surname 	Organisation 1 	Organisation 1 Role	Organisation 2	Organisation 2 Role	Organisation 3 	Organisation 3 Role	Organisation 4	Organisation 4 Role	Organisation 5	Organisation 5 Role	Organisation 6	Organisation 6 Role	Organisation 7	Organisation 7 Role	Organisation 8	Organisation 8 Role
+Professor	Shirley 	Congdon	Bradford District Wellbeing board	Member	Bradford Health and Social Care Economic Partnership Board	Chair	Wellbeing Executive 	Member										
+Professor	Zahir	Irani	NHS (HEE) Advisory Group	Chair														
+Ms	Joanne	Marshall 	Healthcare People Management Association	Trustee	British Psychological Society	Member												
+Professor	Udy 	Archibong	NHS	Consultant	"Affiong Etuk Foundation for Inclusive Health,  registered with
+Corporate Affairs Commission, Nigeria"	Founder and President	Royal College of Nursing	Member	West African College of Nursing	Member								
+Professor	Alistair	Goldman	Bradford Teaching Hospitals NHS	Member – Council of Governors														
+Professor 	Marina	Bloj	British Machine Vision Association (BMVA)	Committee member														
+Professor 	PB 	Anand	Human Development and Capability Association	Fellow	Born in Bradford	Academic Lead University of Bradford												
+Professor 	Karen 	Stansfield 	Nursing and Midwifery Council	Member	Institute of Health Visiting	Fellow	Royal College of Nursing Trade Union	Member	Bradford District and Craven Health and Care Partnership 	Joint Director of People								
+Mr	Hadar	Zaman	Care Quality Commission Mental Health and Adult Social inspectorates	Specialist Professional and Clinical Advisor	National Institute of Health and Care Excellence	Position on the Centre for Guidelines Development												
+Professor 	Rebecca 	Randell 	Wolfson Centre for Applied Health Research 	Fellow 														
+Dr 	Melanie	Cooper 	White Rose Doctoral Training Partnership	Director for the Wellbeing Health and Communities pathway	Maternity Stream Research Network (City of Sanctuary)	Co-developer	Northern Maternity Stream Research Network	Leader										
+Dr 	Anita	Sargeant	Bradford Teaching Hospitals Foundation Trust	Member of education group 	Bradford District Care NHS Foundation Trust	Member of education group 	Airedale NHS Trust	Member of education group 										
+Dr 	Beth	Fylan	National Institute for Health Research Patient Safety Translational Research Centre (NIHR Yorkshire and Humber PSTRC)	Assistant Director 	Patient Safety Translational Research Centre Executive Group	Member	Patient Safety Translational Research Centre Advisory Board	Member										
+Professor 	Peter	Gardner	Wolfson Centre for Applied Health Research 	Fellow 														
+Dr 	Catherine	Quinn	Wolfson Centre for Applied Health Research 	Fellow 														
+Dr 	Neema 	Ghorbani Mojarrad	Wolfson Centre for Applied Health Research 	Fellow 														
+Dr 	Muhammad	Faisal	Wolfson Centre for Applied Health Research 	Fellow 														
+Dr 	Samantha	McLean 	Wolfson Centre for Applied Health Research 	Fellow 														
+Professor 	Amir	Sharif	Wolfson Centre for Applied Health Research 	Fellow 	West Yorkshire and Harrogate Health and Care Partnership	Joint Director of People												
+Professor 	Sherif 	El-Khamisy	Healthy Lifespan Institute, University of Sheffield 	Co Founder and Director 	The Lister Institute of Preventative Medicine	Member												
+Prof	Liz 	Breen	Wolfson Centre for Applied Health Research 	Fellow 	Patient Safety Translational Research Centre 	Deputy Theme lead	Keighley Road Surgery Halifax	Patient Reference Group	BDC Digital Programme Board	Member	City of Research	Member						
+	Alison	Hartley 	General Pharmaceutical Council 	Member														
+Dr 	Karina	Croucher	Child Bereavement UK	Advisory Board member														
+Dr 	Peter	Branney	British Psychological Society	Trustee, Fellow and Chartered Member														
+Professor 	Maryann	Hardy	Society of Radiographers	Member	British Institute of Radiology	Fellow	International Society of Radiographers and Radiological Technologists	Member										
+	Stuart	McKinnon-Evans	Humber Teaching NHS Foundation Trusts	Non-Executive Director/ Chair of Audit Committee														
+Dr 	Andrew	Daly-Smith 	Born in Bradford 	Research Director for the Join Us: Move Play programme	Centre for Applied Education Research 	Steering Group Member												
+Dr 	Lisa 	Edwards 	Grassroots Suicide Prevention	Trustee	National Confidential Inquiry into Suicide and Safety in Mental Heath ((NCISH)	Project Board Member	West Yorkshire Suicide Prevention Oversight Group (SPOG)	Member	West Yorkshire Suicide Prevention Advisory Network (SPAN)	Member	Bradford and District Suicide Prevention Group (BDSPG)	Member	Wigan Suicide Prevention Group (WSPG)	Member	Survivors of Bereavement by Suicide ((SoBS)	Support Group Lead and Volunteer 	Re-Engage	Volunteer
+Professor 	Siobhan 	Reilly 																
+Professor 	Felician	Campean																
+Dr 	Dianne	Wepa 																
+Professor 	Marcus 	Rattray																
+Dr 	Chris	Davey 	Centre for Applied Education Research	Research Team 														
+Professor 	Brendan	Barrett 	Centre for Applied Education Research	Research Team 														
+Dr 	Mai 	Elshehaly 	Centre for Applied Education Research	Steering Group Member	Centre for Applied Education Research	Co-Lead for the Digital Education theme												
+	Ian 	Holmes	Creating Active Schools	Manager														
+	Shania	Boom	Centre for Applied Education Research	Research Team 														
+	Zoe	Helme	Centre for Applied Education Research	Research Team 														
+Professor	Peter 	Mitchell																
+Dr 	Paul	Sullivan 																
+Professor 	Barbara 	Stewart-Knox																
+Professor	Vishanth	Weerakkody																
+Dr 	Samina	Karim	Bradford Metropolitan District Council Children’s Services Overview and Scrutiny Committee	Member														
+Dr 	Yunis	Alam 																
+	Gareth 	Addidle																
+Professor 	Engobo 	Emeseh																
+Professor 	Fiona	Macauley 																
+Dr 	Jonanthan	Silcock 																
+Dr 	Michael	Tatterton 																
+Dr 	Niall 	Mcloughlin																
+Dr 	Eleanor	Bryant																
+Dr 	Valerie	Lesk																
+Dr 	Ria	Vaportzis 																
+Professor	Jan	Oyebode																
+Ms	Beverly	Snaith																
+Mr	Zafar	Iqbal 																
+	Min	Yong																
+	Gill 	Waters																
+	Diane	Webb																
+	Russell	Delderfield 																
+	Michael	Grant 																
+	Kirsten	Riches-Suman 																
+	Elizabeth	Walters																
+	Jill 	Thompson 																
+	Megan	Fisher																
+	Moss	Ferry 																
+	Owen	Greene																
+	Jae	Hargan 																
+	Martin	Fitzgerald																
+	Ana 	Barbosa																
+	Sahdia 	Parveen 																
+	Salvo	Di Martino 																
+	Tony	Sparkes																
+	Krzysztof	Paluch 																

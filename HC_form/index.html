@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HC Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- <script  type="module" src="./hc_forum.mjs"></script> -->
+
+  <body>
+    <div class="container">
+      <h1>Add new member to the Health and Care Leadership Forum</h1>
+      <!-- action="http://localhost:3000/postMessage" method="post" enctype="multipart/form-data" -->
+      <form id="myForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" class="form-control" id="surname" name="surname" />
+        </div>
+
+        <div id="org-container">
+          <div class="form-group">
+            <label for="organization">Organization 1:</label>
+            <input type="text" class="form-control" id="organization" name="organization" />
+          </div>
+          <div class="form-group">
+            <label for="role">Role:</label>
+            <input type="text" class="form-control" id="role" name="role" />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-secondary" id="addOrg">Add</button>
+        <button type="button" class="btn btn-secondary" id="deleteOrg">Delete</button>
+        
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="file" class="form-control-file" id="image" name="image" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="text" class="form-control" id="url" name="url" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </form>
+    </div>
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+   <script>
+    const form = document.getElementById("myForm");
+      //onSubmit
+      document.getElementById("myForm").addEventListener("submit", function (event) {
+        var nameInput = document.getElementById("name");
+        var surnameInput = document.getElementById("surname");
+        var organizationInput = document.getElementById("organization");
+        var roleInput = document.getElementById("role");
+        var imageInput = document.getElementById("image");
+        var urlInput = document.getElementById("url");
+
+        
+
+        if (!nameInput.value || !surnameInput.value || !organizationInput.value || !roleInput.value || !imageInput.value || !urlInput.value) {
+          event.preventDefault(); // Prevent form submission
+
+          // Add 'is-invalid' class to the input fields that fail validation
+          if (!nameInput.value) {
+            nameInput.classList.add("is-invalid");
+          }
+          if (!surnameInput.value) {
+            surnameInput.classList.add("is-invalid");
+          }
+          if (!organizationInput.value) {
+            organizationInput.classList.add("is-invalid");
+          }
+          if (!roleInput.value) {
+            roleInput.classList.add("is-invalid");
+          }
+          if (!imageInput.value) {
+            imageInput.classList.add("is-invalid");
+          }
+          if (!urlInput.value) {
+            urlInput.classList.add("is-invalid");
+          }
+
+          alert("Please fill in all fields."); // Display error message
+        }else{
+          event.preventDefault();
+        const FD = new FormData(form);
+        console.log(...FD);
+        axios.post('http://localhost:3000/postMessage',FD).then(res=>console.log(res)).catch(error=>console.log(error));
+      }
+      });
+      //Creating multiple organisation input field
+      var organisationCount = 1;
+      var maxOrganisation = 5; // maximum number of organisations
+      //add organisation
+      document.getElementById("addOrg").addEventListener("click", () => {
+        if (organisationCount < maxOrganisation) {
+          organisationCount++;
+
+          var orgContiner = document.getElementById("org-container"); //getting the container of organisation
+          var newOrgDiv = document.createElement("div");
+          var newRoleDiv = document.createElement("div");
+          newRoleDiv.className = newOrgDiv.className = "form-group"; //form-group div
+          
+          //creating the label
+          var label, roleLabel;
+          label = document.createElement("label"); roleLabel = document.createElement("label");
+          label.htmlfor = "Organisation " + organisationCount;
+          roleLabel.htmlFor = "Role" + organisationCount;
+          label.textContent = "Organisation" + organisationCount + ":";
+          roleLabel.textContent = "Role" + organisationCount + ":";
+          
+          //creating the input
+          var input, role_input;
+          input = document.createElement("input"); role_input = document.createElement("input");
+          role_input.type = "text"; 
+          input.type = "text";  
+          role_input.className = "form-control";
+          input.className = "form-control"; 
+          input.id = "organization" + organisationCount;
+          role_input.id = "role" + organisationCount;
+          input.name = "organization" + organisationCount;
+          role_input.name = "role" + organisationCount;
+          
+          //appendinggggg
+          newOrgDiv.appendChild(label);
+          newRoleDiv.appendChild(roleLabel);
+          newOrgDiv.appendChild(input);
+          newRoleDiv.appendChild(role_input);
+
+          orgContiner.appendChild(newOrgDiv);
+          orgContiner.appendChild(newRoleDiv);
+          // console.log(orgContiner);
+        } else {
+          alert("Maximum Organisation reached!");
+        }
+      });
+      //removing extra organisation
+      document.getElementById("deleteOrg").addEventListener("click", () => {
+        if (organisationCount > 1) {
+          var orgContiner = document.getElementById("org-container");
+          orgContiner.removeChild(orgContiner.lastElementChild);
+          organisationCount--;
+        }
+      });
+   </script>
+  </body>
+</html>
