@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<!-- <script>var still = "havn't left."</script> -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/team.js"></script>
 
 
@@ -149,7 +151,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <script>
 // Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
+// document.getElementById("myBtn").click();
 function myFunction(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
@@ -163,6 +165,16 @@ function likeFunction(x) {
   x.style.fontWeight = "bold";
   x.innerHTML = "✓ Liked";
 }
+// async function fetchBufferImage() {
+//   try {
+//     const response = await axios.get('http://localhost:3000/imageData'); // Replace '/backend/imageEndpoint' with your actual backend endpoint URL
+//     return response.data; // Assuming the image data is returned in the response's data property
+//   } catch (error) {
+//     console.error('Error fetching buffer image:', error);
+//     return null;
+//   }
+// }
+
 </script>
 
 </body>

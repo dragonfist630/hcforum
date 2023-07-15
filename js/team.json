@@ -3,7 +3,7 @@
  "children": [
   {
     "name": "Wolfson CAHR",
-    "img" : "dashboard/img/dmp.jpg",
+    "img" : "dashboard/img/dmp.jpg", 
     "children": [
       {
       "member": "Rebecca Randell",

@@ -31,7 +31,7 @@
             <input type="text" class="form-control" id="organization" name="organization" />
           </div>
           <div class="form-group">
-            <label for="role">Role:</label>
+            <label for="role">Role 1:</label>
             <input type="text" class="form-control" id="role" name="role" />
           </div>
         </div>
@@ -90,10 +90,13 @@
 
           alert("Please fill in all fields."); // Display error message
         }else{
-          event.preventDefault();
+        event.preventDefault();
         const FD = new FormData(form);
         console.log(...FD);
-        axios.post('http://localhost:3000/postMessage',FD).then(res=>console.log(res)).catch(error=>console.log(error));
+        axios.post('http://localhost:3000/postMessage',FD).then(res=>{alert(res.data.message)
+         location.reload();
+        }
+        ).catch(error=>console.log(error));
       }
       });
       //Creating multiple organisation input field
