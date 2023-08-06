@@ -1,4 +1,4 @@
-// import axios from "axios";
+// Use of API
 function fetchData() {
   return new Promise((resolve, reject) => {
     axios.get('http://localhost:3000/data')
