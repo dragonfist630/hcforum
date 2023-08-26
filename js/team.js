@@ -246,7 +246,4 @@ fetchData()
   .catch(error => {
     console.log(error);
   });
-  // var nyn = Object.assign([],still)
-  console.log(still);
-  // "js/team.json"
-
+  

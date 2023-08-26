@@ -92,7 +92,7 @@
         }else{
         event.preventDefault();
         const FD = new FormData(form);
-        console.log(...FD);
+        // console.log(...FD);
         axios.post('http://localhost:3000/postMessage',FD).then(res=>{alert(res.data.message)
          location.reload();
         }

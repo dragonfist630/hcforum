@@ -26,10 +26,10 @@
           <div class="modal-body">
             <!-- Edit Member Form will be added here dynamically using JavaScript -->
           </div>
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary" onclick="saveEditedMember()">Save Changes</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -38,370 +38,389 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <!-- <script>
+      var jsondata = {};
+      // const jsonData = [
+      //   {
+      //     member: "nayan gadhari",
+      //     name: "ng",
+      //     organization: ["checkout.com"],
+      //     role: ["SDE"],
+      //     link: "ww.fb.com",
+      //     _id: {
+      //       $oid: "64b1505ab13bd8e1d9c30a4b",
+      //     },
+      //     img: "../img/male_user.png",
+      //     size: 50000,
+      //     __v: 0,
+      //   },
 
-    <script>
-      // Sample JSON data
-      const jsonData = [
-        {
-          member: "nayan gadhari",
-          name: "ng",
-          organization: ["checkout.com"],
-          role: ["SDE"],
-          link: "ww.fb.com",
-          _id: {
-            $oid: "64b1505ab13bd8e1d9c30a4b",
-          },
-          img: "../img/male_user.png",
-          size: 50000,
-          __v: 0,
-        },
+      //   {
+      //     img: "../img/male_user.png",
+      //     size: 50000,
+      //     _id: {
+      //       $oid: "64b151a83879c3990d0b417b",
+      //     },
+      //     name: "Me",
+      //     organization: ["google"],
+      //     __v: 0,
+      //     member: "Mai e",
+      //     role: ["SDE"],
+      //     link: "ww.fb.com",
+      //   },
 
-        {
-          img: "../img/male_user.png",
-          size: 50000,
-          _id: {
-            $oid: "64b151a83879c3990d0b417b",
-          },
-          name: "Me",
-          organization: ["google"],
-          __v: 0,
-          member: "Mai e",
-          role: ["SDE"],
-          link: "ww.fb.com",
-        },
+      //   {
+      //     organization: ["linkeIn"],
+      //     img: "../img/male_user.png",
+      //     link: "ww.fb.com",
+      //     __v: 0,
+      //     _id: {
+      //       $oid: "64b151d93879c3990d0b4180",
+      //     },
+      //     name: "PP",
+      //     size: 50000,
+      //     member: "Peter Parker",
+      //     role: ["SDE"],
+      //   },
 
-        {
-          organization: ["linkeIn"],
-          img: "../img/male_user.png",
-          link: "ww.fb.com",
-          __v: 0,
-          _id: {
-            $oid: "64b151d93879c3990d0b4180",
-          },
-          name: "PP",
-          size: 50000,
-          member: "Peter Parker",
-          role: ["SDE"],
-        },
+      //   {
+      //     member: "Steve Rogers",
+      //     name: "SR",
+      //     role: ["Captian"],
+      //     size: 50000,
+      //     _id: {
+      //       $oid: "64b151f23879c3990d0b4187",
+      //     },
+      //     organization: ["Avengers"],
+      //     img: "../img/male_user.png",
+      //     link: "ww.fb.com",
+      //     __v: 0,
+      //   },
 
-        {
-          member: "Steve Rogers",
-          name: "SR",
-          role: ["Captian"],
-          size: 50000,
-          _id: {
-            $oid: "64b151f23879c3990d0b4187",
-          },
-          organization: ["Avengers"],
-          img: "../img/male_user.png",
-          link: "ww.fb.com",
-          __v: 0,
-        },
+      //   {
+      //     _id: {
+      //       $oid: "64b1522b3879c3990d0b418e",
+      //     },
+      //     member: "Steven Strange",
+      //     img: "../img/male_user.png",
+      //     __v: 0,
+      //     name: "SS",
+      //     organization: ["Avengers"],
+      //     role: ["Scorceror Supreme"],
+      //     link: "ww.fb.com",
+      //     size: 50000,
+      //   },
 
-        {
-          _id: {
-            $oid: "64b1522b3879c3990d0b418e",
-          },
-          member: "Steven Strange",
-          img: "../img/male_user.png",
-          __v: 0,
-          name: "SS",
-          organization: ["Avengers"],
-          role: ["Scorceror Supreme"],
-          link: "ww.fb.com",
-          size: 50000,
-        },
+      //   {
+      //     organization: ["Avengers"],
+      //     role: ["Spy"],
+      //     img: "../img/male_user.png",
+      //     _id: {
+      //       $oid: "64b152413879c3990d0b4193",
+      //     },
+      //     member: "Natasha Romonoff",
+      //     name: "NR",
+      //     link: "ww.fb.com",
+      //     size: 50000,
+      //     __v: 0,
+      //   },
 
-        {
-          organization: ["Avengers"],
-          role: ["Spy"],
-          img: "../img/male_user.png",
-          _id: {
-            $oid: "64b152413879c3990d0b4193",
-          },
-          member: "Natasha Romonoff",
-          name: "NR",
-          link: "ww.fb.com",
-          size: 50000,
-          __v: 0,
-        },
+      //   {
+      //     member: "Bruce Banner",
+      //     img: "../img/male_user.png",
+      //     link: "ww.fb.com",
+      //     _id: {
+      //       $oid: "64b152583879c3990d0b4198",
+      //     },
+      //     name: "BB",
+      //     organization: ["Avengers"],
+      //     role: ["Hulk smasher"],
+      //     size: 50000,
+      //     __v: 0,
+      //   },
 
-        {
-          member: "Bruce Banner",
-          img: "../img/male_user.png",
-          link: "ww.fb.com",
-          _id: {
-            $oid: "64b152583879c3990d0b4198",
-          },
-          name: "BB",
-          organization: ["Avengers"],
-          role: ["Hulk smasher"],
-          size: 50000,
-          __v: 0,
-        },
+      //   {
+      //     organization: ["Wolfson CAHR"],
+      //     _id: {
+      //       $oid: "64b2c6bc636c6ddbedd6dfec",
+      //     },
+      //     member: "Rebecca Randell",
+      //     name: "Professor Rebecca Randell is a renowned expert in digital innovations in healthcare at the University of Bradford's Faculty of Health Studies. Her research, funded by NIHR Health Services & Delivery Research (HS&DR), centers on understanding healthcare professionals' work to enhance health IT design and utilization, with projects ranging from robotic surgery's impact on teamwork to developing quality dashboards for clinical teams using National Clinical Audit data.",
+      //     role: [],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.bradford.ac.uk/staff/rrandell",
+      //     size: 50000,
+      //   },
 
-        {
-          organization: ["Wolfson CAHR"],
-          _id: {
-            $oid: "64b2c6bc636c6ddbedd6dfec",
-          },
-          member: "Rebecca Randell",
-          name: "Professor Rebecca Randell is a renowned expert in digital innovations in healthcare at the University of Bradford's Faculty of Health Studies. Her research, funded by NIHR Health Services & Delivery Research (HS&DR), centers on understanding healthcare professionals' work to enhance health IT design and utilization, with projects ranging from robotic surgery's impact on teamwork to developing quality dashboards for clinical teams using National Clinical Audit data.",
-          role: [],
-          img: "../img/male_user.png",
-          link: "https://www.bradford.ac.uk/staff/rrandell",
-          size: 50000,
-        },
+      //   {
+      //     _id: {
+      //       $oid: "64b2c793636c6ddbedd6dfed",
+      //     },
+      //     member: "Melanie Cooper",
+      //     name: "M C",
+      //     organization: ["Wolfson CAHR"],
+      //     role: [],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.bradford.ac.uk/staff/rrandell",
+      //     size: 50000,
+      //   },
 
-        {
-          _id: {
-            $oid: "64b2c793636c6ddbedd6dfed",
-          },
-          member: "Melanie Cooper",
-          name: "M C",
-          organization: ["Wolfson CAHR"],
-          role: [],
-          img: "../img/male_user.png",
-          link: "https://www.bradford.ac.uk/staff/rrandell",
-          size: 50000,
-        },
+      //   {
+      //     name: "PG",
+      //     organization: ["Wolfson CAHR"],
+      //     role: [],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.bradford.ac.uk/staff/phgardner",
+      //     size: 50000,
+      //     _id: {
+      //       $oid: "64b2c7a2636c6ddbedd6dfee",
+      //     },
+      //     member: "Peter Gardener",
+      //   },
 
-        {
-          name: "PG",
-          organization: ["Wolfson CAHR"],
-          role: [],
-          img: "../img/male_user.png",
-          link: "https://www.bradford.ac.uk/staff/phgardner",
-          size: 50000,
-          _id: {
-            $oid: "64b2c7a2636c6ddbedd6dfee",
-          },
-          member: "Peter Gardener",
-        },
-
-        {
-          _id: { $oid: "64b2c7b2636c6ddbedd6dfef" },
-          member: "Catherine Quinn",
-          name: "CQ",
-          organization: ["Wolfson CAHR"],
-          role: [],
-          img: "../img/male_user.png",
-          link: "https://www.bradford.ac.uk/staff/cquinn1",
-          size: { $numberInt: "50000" },
-        },
-        {
-          _id: { $oid: "64b2c7c3636c6ddbedd6dff0" },
-          member: "Neema Mojarrad",
-          name: "NM",
-          organization: ["Wolfson CAHR"],
-          role: [],
-          img: "../img/male_user.png",
-          link: "https://www.bradford.ac.uk/staff/nghorbanimojarrad",
-          size: { $numberInt: "50000" },
-        },
-        {
-          _id: { $oid: "64b2c837636c6ddbedd6dff1" },
-          member: "Mai Elshehaly",
-          name: "ME",
-          link: "http://www.invisai.com/mai/",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["CAER"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c865636c6ddbedd6dff2" },
-          member: "Brendan Barrett",
-          name: "BB",
-          link: "https://www.bradford.ac.uk/staff/btbarrett",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["CAER"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c873636c6ddbedd6dff3" },
-          member: "Chris Davey",
-          name: "CD",
-          link: "https://www.bradford.ac.uk/staff/cjdavey1",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["CAER"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c8c0636c6ddbedd6dff4" },
-          member: "Chris Davey",
-          name: "CD",
-          link: "#",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["Bradford District Wellbeing board"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c8e9636c6ddbedd6dff5" },
-          member: "Karen Stansfield",
-          name: "KS",
-          link: "#",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["Bradford District Wellbeing board"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c8f6636c6ddbedd6dff6" },
-          member: "Anita Sargeant",
-          name: "AS",
-          link: "#",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["Bradford District Wellbeing board"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c950636c6ddbedd6dff7" },
-          member: "Alistair Goldman",
-          name: "AG",
-          link: "#",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["Bradford Teaching Hospitals NHS"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64b2c95a636c6ddbedd6dff8" },
-          member: "Udy Archibong",
-          name: "UA",
-          link: "#",
-          img: "../img/male_user.png",
-          size: { $numberInt: "40000" },
-          organization: ["Bradford Teaching Hospitals NHS"],
-          role: [],
-        },
-        {
-          _id: { $oid: "64be61874ca44312e770c051" },
-          member: "Robin  Williams",
-          name: "RW",
-          organization: ["Hollywood"],
-          role: ["Actor"],
-          img: "../img/male_user.png",
-          link: "https://www.google.com/search?client=firefox-b-d&q=robin+williams",
-          size: { $numberInt: "50000" },
-          __v: { $numberInt: "0" },
-        },
-        {
-          _id: { $oid: "64c781f4b2aedc8cc5da9dfd" },
-          member: "Zotero Library",
-          name: "ZL",
-          organization: ["google"],
-          role: ["DB"],
-          img: "../img/male_user.png",
-          link: "www.google.com",
-          size: { $numberInt: "50000" },
-          __v: { $numberInt: "0" },
-        },
-        {
-          _id: { $oid: "64c7a827c509f80726844fea" },
-          member: "Name surname",
-          name: "Ns",
-          organization: ["Meta"],
-          role: ["SDE"],
-          img: "../img/male_user.png",
-          link: "ww.goo",
-          size: { $numberInt: "50000" },
-          __v: { $numberInt: "0" },
-        },
-      ];
-
-      // Function to create and render member cards
-      function renderMemberCards() {
-        const cardsContainer = document.getElementById("cardsContainer");
-
-        jsonData.forEach((data, index) => {
-          const card = `
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="${data.img}" class="card-img-top" alt="Member Image">
-              <div class="card-body">
-                <h5 class="card-title">${data.member}</h5>
-                <p class="card-text"> Shortcut: ${data.name}</p>
-                <p class="card-text">Organization: ${data.organization.join(", ")}</p>
-                <p class="card-text">Role: ${data.role.join(", ")}</p>
-                <p class="card-text">Link: ${data.link}</p>
-                <button class="btn btn-secondary ml-2" onclick="editMember(${index})" data-toggle="modal"
-                  data-target="#editMemberModal">Edit</button>
-                <button class="btn btn-danger ml-2" onclick="deleteMember(${index})">Delete</button>
-              </div>
-            </div>
-          </div>
-        `;
-          cardsContainer.innerHTML += card;
-        });
-      }
-
+      //   {
+      //     _id: { $oid: "64b2c7b2636c6ddbedd6dfef" },
+      //     member: "Catherine Quinn",
+      //     name: "CQ",
+      //     organization: ["Wolfson CAHR"],
+      //     role: [],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.bradford.ac.uk/staff/cquinn1",
+      //     size: { $numberInt: "50000" },
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c7c3636c6ddbedd6dff0" },
+      //     member: "Neema Mojarrad",
+      //     name: "NM",
+      //     organization: ["Wolfson CAHR"],
+      //     role: [],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.bradford.ac.uk/staff/nghorbanimojarrad",
+      //     size: { $numberInt: "50000" },
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c837636c6ddbedd6dff1" },
+      //     member: "Mai Elshehaly",
+      //     name: "ME",
+      //     link: "http://www.invisai.com/mai/",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["CAER"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c865636c6ddbedd6dff2" },
+      //     member: "Brendan Barrett",
+      //     name: "BB",
+      //     link: "https://www.bradford.ac.uk/staff/btbarrett",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["CAER"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c873636c6ddbedd6dff3" },
+      //     member: "Chris Davey",
+      //     name: "CD",
+      //     link: "https://www.bradford.ac.uk/staff/cjdavey1",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["CAER"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c8c0636c6ddbedd6dff4" },
+      //     member: "Chris Davey",
+      //     name: "CD",
+      //     link: "#",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["Bradford District Wellbeing board"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c8e9636c6ddbedd6dff5" },
+      //     member: "Karen Stansfield",
+      //     name: "KS",
+      //     link: "#",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["Bradford District Wellbeing board"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c8f6636c6ddbedd6dff6" },
+      //     member: "Anita Sargeant",
+      //     name: "AS",
+      //     link: "#",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["Bradford District Wellbeing board"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c950636c6ddbedd6dff7" },
+      //     member: "Alistair Goldman",
+      //     name: "AG",
+      //     link: "#",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["Bradford Teaching Hospitals NHS"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64b2c95a636c6ddbedd6dff8" },
+      //     member: "Udy Archibong",
+      //     name: "UA",
+      //     link: "#",
+      //     img: "../img/male_user.png",
+      //     size: { $numberInt: "40000" },
+      //     organization: ["Bradford Teaching Hospitals NHS"],
+      //     role: [],
+      //   },
+      //   {
+      //     _id: { $oid: "64be61874ca44312e770c051" },
+      //     member: "Robin  Williams",
+      //     name: "RW",
+      //     organization: ["Hollywood"],
+      //     role: ["Actor"],
+      //     img: "../img/male_user.png",
+      //     link: "https://www.google.com/search?client=firefox-b-d&q=robin+williams",
+      //     size: { $numberInt: "50000" },
+      //     __v: { $numberInt: "0" },
+      //   },
+      //   {
+      //     _id: { $oid: "64c781f4b2aedc8cc5da9dfd" },
+      //     member: "Zotero Library",
+      //     name: "ZL",
+      //     organization: ["google"],
+      //     role: ["DB"],
+      //     img: "../img/male_user.png",
+      //     link: "www.google.com",
+      //     size: { $numberInt: "50000" },
+      //     __v: { $numberInt: "0" },
+      //   },
+      //   {
+      //     _id: { $oid: "64c7a827c509f80726844fea" },
+      //     member: "Name surname",
+      //     name: "Ns",
+      //     organization: ["Meta"],
+      //     role: ["SDE"],
+      //     img: "../img/male_user.png",
+      //     link: "ww.goo",
+      //     size: { $numberInt: "50000" },
+      //     __v: { $numberInt: "0" },
+      //   },
+      // ];
       // Function to open Edit Member Modal
-      function editMember(index) {
-        const memberData = jsonData[index];
+      const editMember = (index) => {
+        const memberData = jsondata[index];
+        console.log(memberData);
         const modalBody = document.querySelector("#editMemberModal .modal-body");
         modalBody.innerHTML = `
-        <form id="editForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" value="${memberData.name}" required>
-          </div>
-          <div class="form-group">
-            <label for="organization">Organization</label>
-            <input type="text" class="form-control" id="organization" value="${memberData.organization.join(", ")}" required>
-          </div>
-          <div class="form-group">
-            <label for="role">Role</label>
-            <input type="text" class="form-control" id="role" value="${memberData.role.join(", ")}" required>
-          </div>
-          <div class="form-group">
-            <label for="img">Image URL</label>
-            <input type="text" class="form-control" id="img" value="${memberData.img}" required>
-          </div>
-          <div class="form-group">
-            <label for="link">Link</label>
-            <input type="text" class="form-control" id="link" value="${memberData.link}" required>
-          </div>
-        </form>
-      `;
+  <form id="editForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" value="${memberData.name}" required>
+    </div>
+    <div class="form-group">
+      <label for="organization">Organization</label>
+      <input type="text" class="form-control" id="organization" value="${memberData.organization.join(", ")}" required>
+    </div>
+    <div class="form-group">
+      <label for="role">Role</label>
+      <input type="text" class="form-control" id="role" value="${memberData.role.join(", ")}" required>
+    </div>
+    <div class="form-group">
+      <label for="img">Image URL</label>
+      <input type="text" class="form-control" id="img" value="${memberData.img}" required>
+    </div>
+    <div class="form-group">
+      <label for="link">Link</label>
+      <input type="text" class="form-control" id="link" value="${memberData.link}" required>
+    </div>
+  </form>
+`;
+      };
+      function fetchData() {
+        return new Promise((resolve, reject) => {
+          axios
+            .get("http://localhost:3000/showAdmin")
+            .then((response) => {
+              resolve(response.data);
+            })
+            .catch((error) => {
+              reject(error);
+            });
+        });
       }
+      fetchData()
+        .then((jsonData) => {
+          jsondata = jsonData;
+          console.log(jsondata);
 
-      // Function to save edited member details
-      function saveEditedMember() {
-        const editForm = document.getElementById("editForm");
-        const index = editForm.dataset.index;
-        jsonData[index].name = editForm.name.value;
-        jsonData[index].organization = editForm.organization.value.split(",").map((item) => item.trim());
-        jsonData[index].role = editForm.role.value.split(",").map((item) => item.trim());
-        jsonData[index].img = editForm.img.value;
-        jsonData[index].link = editForm.link.value;
+          // Function to create and render member cards
+          const renderMemberCards = () => {
+            const cardsContainer = document.getElementById("cardsContainer");
 
-        // Clear modal content and close modal
-        document.querySelector("#editMemberModal .modal-body").innerHTML = "";
-        $("#editMemberModal").modal("hide");
+            jsonData.forEach((data, index) => {
+              const card = `
+    <div class="col-md-3 mb-3">
+      <div class="card">
+        <img src="../img/male_user.png" class="card-img-top" alt="Member Image" class="w-25 col-6">
+        <div class="card-body">
+          <h5 class="card-title">${data.member}</h5>
+          <p class="card-text">Organization: ${data.organization.join(", ")}</p>
+          <p class="card-text">Role: ${data.role.join(", ")}</p>
+          <button class="btn btn-secondary ml-2" onclick="editMember(${index})" data-toggle="modal"
+            data-target="#editMemberModal">Edit</button>
+          <button class="btn btn-danger ml-2" onclick="deleteMember(${index})">Delete</button>
+        </div>
+      </div>
+    </div>
+  `;
+              cardsContainer.innerHTML += card;
+            });
+          };
 
-        // Clear and re-render the cards
-        const cardsContainer = document.getElementById("cardsContainer");
-        cardsContainer.innerHTML = "";
-        renderMemberCards();
-      }
+          // Function to save edited member details
+          function saveEditedMember() {
+            const editForm = document.getElementById("editForm");
+            const index = editForm.dataset.index;
+            jsonData[index].name = editForm.name.value;
+            jsonData[index].organization = editForm.organization.value.split(",").map((item) => item.trim());
+            jsonData[index].role = editForm.role.value.split(",").map((item) => item.trim());
+            jsonData[index].img = editForm.img.value;
+            jsonData[index].link = editForm.link.value;
 
-      // Function to delete a member card
-      function deleteMember(index) {
-        jsonData.splice(index, 1);
+            // Clear modal content and close modal
+            document.querySelector("#editMemberModal .modal-body").innerHTML = "";
+            $("#editMemberModal").modal("hide");
 
-        // Clear and re-render the cards
-        const cardsContainer = document.getElementById("cardsContainer");
-        cardsContainer.innerHTML = "";
-        renderMemberCards();
-      }
+            // Clear and re-render the cards
+            const cardsContainer = document.getElementById("cardsContainer");
+            cardsContainer.innerHTML = "";
+            renderMemberCards();
+          }
 
-      // Initial render
-      renderMemberCards();
-    </script>
+          // Function to delete a member card
+          function deleteMember(index) {
+            jsonData.splice(index, 1);
+
+            // Clear and re-render the cards
+            const cardsContainer = document.getElementById("cardsContainer");
+            cardsContainer.innerHTML = "";
+            renderMemberCards();
+          }
+
+          // Initial render
+          renderMemberCards();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script> -->
   </body>
 </html>
